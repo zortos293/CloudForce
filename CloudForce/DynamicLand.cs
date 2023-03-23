@@ -20,7 +20,7 @@ namespace CloudForce
     {
         Downloaders downloaders = new Downloaders();
         public static string mainpath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Cloudforce\\"; // %appdata%\cloudforce\
-
+        AppsJSON userjson;
         public async Task ClearFlowLayout(Form1 form)
         {
             await Task.Run(() =>
@@ -178,19 +178,6 @@ namespace CloudForce
                     {
                         ctla.Invoke(new Action(() => ctla.FillColor = Color.FromArgb(53, 53, 53)));
                         ctla.Invoke(new Action(() => ctla.Image = global::CloudForce.Properties.Resources.download_48px1));
-                    }
-                    if (!string.IsNullOrEmpty(Form1.KeyAuthApp.getvar("AppJson")))
-                    {
-                        if (File.Exists(mainpath + APPJson.Apps[int.Parse(tag)].AppExe))
-                        {
-                            ctla.Invoke(new Action(() => ctla.Image = Resources.play_48px));
-                            ctla.Invoke(new Action(() => ctla.FillColor = Color.FromArgb(53, 53, 53)));
-                        }
-                        else
-                        {
-                            ctla.Invoke(new Action(() => ctla.FillColor = Color.FromArgb(53, 53, 53)));
-                            ctla.Invoke(new Action(() => ctla.Image = global::CloudForce.Properties.Resources.download_48px1));
-                        }
                     }
 
                 }
