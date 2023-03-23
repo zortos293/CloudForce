@@ -15,6 +15,10 @@ namespace CloudForce
             WebClient web = new WebClient();
             return web.DownloadString("https://raw.githubusercontent.com/zortos293/Cloudforce-Revamped-Resources/Dev/Apps.json");
         }
+        public interface JsonContainer
+        {
+            List<App> Apps { get; set; }
+        }
 
         public static Root APPJson = JsonConvert.DeserializeObject<AppsJSON.Root>(getAPPjson());
 
@@ -31,7 +35,7 @@ namespace CloudForce
             public string AppUpdateLog { get; set; }
         }
 
-        public class Root
+        public class Root : JsonContainer
         {
             public List<App> Apps { get; set; }
         }

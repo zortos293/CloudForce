@@ -35,11 +35,13 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.Utilities_BTN = new Guna.UI2.WinForms.Guna2Button();
-            this.Home_BTN = new Guna.UI2.WinForms.Guna2Button();
-            this.Apps_BTN = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.LoginBTN = new Guna.UI2.WinForms.Guna2Button();
+            this.AppsBTN = new Guna.UI2.WinForms.Guna2Button();
+            this.Home_BTN = new Guna.UI2.WinForms.Guna2Button();
+            this.LaunchersBTN = new Guna.UI2.WinForms.Guna2Button();
+            this.UtilitiesBTN = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -89,28 +91,88 @@
             this.guna2DragControl1.TargetControl = this;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
-            // Utilities_BTN
+            // guna2VScrollBar1
             // 
-            this.Utilities_BTN.BorderRadius = 4;
-            this.Utilities_BTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Utilities_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Utilities_BTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Utilities_BTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Utilities_BTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.Utilities_BTN.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Utilities_BTN.ForeColor = System.Drawing.Color.White;
-            this.Utilities_BTN.Image = global::CloudForce.Properties.Resources.maintenance_96px;
-            this.Utilities_BTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Utilities_BTN.ImageSize = new System.Drawing.Size(30, 30);
-            this.Utilities_BTN.Location = new System.Drawing.Point(168, 10);
-            this.Utilities_BTN.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
-            this.Utilities_BTN.Name = "Utilities_BTN";
-            this.Utilities_BTN.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Utilities_BTN.Size = new System.Drawing.Size(150, 45);
-            this.Utilities_BTN.TabIndex = 7;
-            this.Utilities_BTN.Text = "Apps";
-            this.Utilities_BTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Utilities_BTN.Click += new System.EventHandler(this.Utilities_BTN_Click);
+            this.guna2VScrollBar1.BindingContainer = this.flowLayoutPanel1;
+            this.guna2VScrollBar1.BorderRadius = 6;
+            this.guna2VScrollBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2VScrollBar1.InUpdate = false;
+            this.guna2VScrollBar1.LargeChange = 10;
+            this.guna2VScrollBar1.Location = new System.Drawing.Point(872, 61);
+            this.guna2VScrollBar1.Name = "guna2VScrollBar1";
+            this.guna2VScrollBar1.ScrollbarSize = 18;
+            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 469);
+            this.guna2VScrollBar1.TabIndex = 0;
+            this.guna2VScrollBar1.ThumbSize = 5F;
+            this.guna2VScrollBar1.ThumbStyle = Guna.UI2.WinForms.Enums.ThumbStyle.Inset;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 4;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = global::CloudForce.Properties.Resources.settings_64px;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button1.Location = new System.Drawing.Point(842, 485);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.guna2Button1.Size = new System.Drawing.Size(48, 45);
+            this.guna2Button1.TabIndex = 13;
+            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // LoginBTN
+            // 
+            this.LoginBTN.BorderRadius = 4;
+            this.LoginBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LoginBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LoginBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LoginBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LoginBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.LoginBTN.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginBTN.ForeColor = System.Drawing.Color.White;
+            this.LoginBTN.Image = global::CloudForce.Properties.Resources.login_64px;
+            this.LoginBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.LoginBTN.ImageSize = new System.Drawing.Size(30, 30);
+            this.LoginBTN.Location = new System.Drawing.Point(12, 489);
+            this.LoginBTN.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.LoginBTN.Name = "LoginBTN";
+            this.LoginBTN.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.LoginBTN.Size = new System.Drawing.Size(150, 41);
+            this.LoginBTN.TabIndex = 12;
+            this.LoginBTN.Text = "Login";
+            this.LoginBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.LoginBTN.Click += new System.EventHandler(this.LoginBTN_Click);
+            // 
+            // AppsBTN
+            // 
+            this.AppsBTN.BorderRadius = 4;
+            this.AppsBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AppsBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AppsBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AppsBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AppsBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.AppsBTN.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AppsBTN.ForeColor = System.Drawing.Color.White;
+            this.AppsBTN.Image = global::CloudForce.Properties.Resources.maintenance_96px;
+            this.AppsBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AppsBTN.ImageSize = new System.Drawing.Size(30, 30);
+            this.AppsBTN.Location = new System.Drawing.Point(168, 10);
+            this.AppsBTN.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.AppsBTN.Name = "AppsBTN";
+            this.AppsBTN.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.AppsBTN.Size = new System.Drawing.Size(150, 45);
+            this.AppsBTN.TabIndex = 7;
+            this.AppsBTN.Text = "Apps";
+            this.AppsBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AppsBTN.Click += new System.EventHandler(this.Apps_BTN_Click);
             // 
             // Home_BTN
             // 
@@ -133,65 +195,53 @@
             this.Home_BTN.TabIndex = 5;
             this.Home_BTN.Text = "Home";
             this.Home_BTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Home_BTN.Click += new System.EventHandler(this.Home_BTN_Click);
             // 
-            // Apps_BTN
+            // LaunchersBTN
             // 
-            this.Apps_BTN.BorderRadius = 4;
-            this.Apps_BTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Apps_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Apps_BTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Apps_BTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Apps_BTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.Apps_BTN.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Apps_BTN.ForeColor = System.Drawing.Color.White;
-            this.Apps_BTN.Image = global::CloudForce.Properties.Resources.apps_tab_96px;
-            this.Apps_BTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Apps_BTN.ImageSize = new System.Drawing.Size(30, 30);
-            this.Apps_BTN.Location = new System.Drawing.Point(480, 10);
-            this.Apps_BTN.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
-            this.Apps_BTN.Name = "Apps_BTN";
-            this.Apps_BTN.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Apps_BTN.Size = new System.Drawing.Size(150, 45);
-            this.Apps_BTN.TabIndex = 6;
-            this.Apps_BTN.Text = "Launchers";
-            this.Apps_BTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.LaunchersBTN.BorderRadius = 4;
+            this.LaunchersBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LaunchersBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LaunchersBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LaunchersBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LaunchersBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.LaunchersBTN.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LaunchersBTN.ForeColor = System.Drawing.Color.White;
+            this.LaunchersBTN.Image = global::CloudForce.Properties.Resources.apps_tab_96px;
+            this.LaunchersBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.LaunchersBTN.ImageSize = new System.Drawing.Size(30, 30);
+            this.LaunchersBTN.Location = new System.Drawing.Point(480, 10);
+            this.LaunchersBTN.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.LaunchersBTN.Name = "LaunchersBTN";
+            this.LaunchersBTN.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.LaunchersBTN.Size = new System.Drawing.Size(150, 45);
+            this.LaunchersBTN.TabIndex = 6;
+            this.LaunchersBTN.Text = "Launchers";
+            this.LaunchersBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.LaunchersBTN.Click += new System.EventHandler(this.LaunchersBTN_Click);
             // 
-            // guna2Button4
+            // UtilitiesBTN
             // 
-            this.guna2Button4.BorderRadius = 4;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Image = global::CloudForce.Properties.Resources.circled_menu_96px;
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button4.Location = new System.Drawing.Point(324, 10);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.guna2Button4.Size = new System.Drawing.Size(150, 45);
-            this.guna2Button4.TabIndex = 8;
-            this.guna2Button4.Text = "Utilities";
-            this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // guna2VScrollBar1
-            // 
-            this.guna2VScrollBar1.BindingContainer = this.flowLayoutPanel1;
-            this.guna2VScrollBar1.BorderRadius = 6;
-            this.guna2VScrollBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2VScrollBar1.InUpdate = false;
-            this.guna2VScrollBar1.LargeChange = 10;
-            this.guna2VScrollBar1.Location = new System.Drawing.Point(880, 61);
-            this.guna2VScrollBar1.Name = "guna2VScrollBar1";
-            this.guna2VScrollBar1.ScrollbarSize = 10;
-            this.guna2VScrollBar1.Size = new System.Drawing.Size(10, 469);
-            this.guna2VScrollBar1.TabIndex = 0;
-            this.guna2VScrollBar1.ThumbSize = 5F;
-            this.guna2VScrollBar1.ThumbStyle = Guna.UI2.WinForms.Enums.ThumbStyle.Inset;
+            this.UtilitiesBTN.BorderRadius = 4;
+            this.UtilitiesBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.UtilitiesBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.UtilitiesBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.UtilitiesBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.UtilitiesBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.UtilitiesBTN.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UtilitiesBTN.ForeColor = System.Drawing.Color.White;
+            this.UtilitiesBTN.Image = global::CloudForce.Properties.Resources.circled_menu_96px;
+            this.UtilitiesBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.UtilitiesBTN.ImageSize = new System.Drawing.Size(30, 30);
+            this.UtilitiesBTN.Location = new System.Drawing.Point(324, 10);
+            this.UtilitiesBTN.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.UtilitiesBTN.Name = "UtilitiesBTN";
+            this.UtilitiesBTN.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.UtilitiesBTN.Size = new System.Drawing.Size(150, 45);
+            this.UtilitiesBTN.TabIndex = 8;
+            this.UtilitiesBTN.Text = "Utilities";
+            this.UtilitiesBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.UtilitiesBTN.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // Form1
             // 
@@ -203,13 +253,14 @@
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.Utilities_BTN);
+            this.Controls.Add(this.AppsBTN);
             this.Controls.Add(this.Home_BTN);
-            this.Controls.Add(this.Apps_BTN);
-            this.Controls.Add(this.guna2Button4);
+            this.Controls.Add(this.LaunchersBTN);
+            this.Controls.Add(this.UtilitiesBTN);
+            this.Controls.Add(this.LoginBTN);
+            this.Controls.Add(this.guna2Button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Opacity = 0.99D;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -219,15 +270,17 @@
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button Home_BTN;
-        private Guna.UI2.WinForms.Guna2Button Apps_BTN;
-        private Guna.UI2.WinForms.Guna2Button Utilities_BTN;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button LaunchersBTN;
+        private Guna.UI2.WinForms.Guna2Button AppsBTN;
+        private Guna.UI2.WinForms.Guna2Button UtilitiesBTN;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Guna.UI2.WinForms.Guna2VScrollBar guna2VScrollBar1;
+        private Guna.UI2.WinForms.Guna2Button LoginBTN;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
 
